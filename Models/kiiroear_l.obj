@@ -1,0 +1,37 @@
+# IsoRim Waylith - Kiiro Pack (our own simple shapes): kiiroear_l (one solid ear, pink inner face), relative to the head anchor (0, 0.64, 0)
+mtllib kiirohair.mtl
+o kiiroear_l
+v -0.1858 0.2255 -0.0548
+v -0.0071 0.2692 -0.0597
+v -0.1451 0.3941 -0.0738
+v -0.1218 0.3998 -0.0745
+v -0.1858 0.2307 -0.0091
+v -0.0071 0.2744 -0.0140
+v -0.1451 0.3992 -0.0281
+v -0.1218 0.4049 -0.0288
+v -0.1570 0.2710 -0.0519
+v -0.0534 0.2964 -0.0547
+v -0.1335 0.3688 -0.0629
+v -0.1199 0.3721 -0.0633
+usemtl stuff
+f 1 10 2
+f 10 4 2
+f 12 3 4
+f 3 9 1
+f 2 5 1
+f 4 6 2
+f 3 8 4
+f 1 7 3
+f 6 7 5
+f 1 9 10
+f 10 12 4
+f 12 11 3
+f 3 11 9
+f 2 6 5
+f 4 8 6
+f 3 7 8
+f 1 5 7
+f 6 8 7
+usemtl kiiroear_inner
+f 9 12 10
+f 9 11 12

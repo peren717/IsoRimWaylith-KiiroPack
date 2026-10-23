@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>IsoRim Waylith - Kiiro Pack</name>
+  <author>Peren.</author>
+  <packageId>Peren.IsoRimWaylith.KiiroPack</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Peren.IsoRim17</packageId>
+      <displayName>IsoRim Waylith</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3819577715</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>Ancot.KiiroRace</packageId>
+      <displayName>Kiiro Race</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2988200143</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Peren.IsoRim17</li>
+    <li>erdelf.HumanoidAlienRaces</li>
+    <li>Ancot.AncotLibrary</li>
+    <li>Ancot.KiiroRace</li>
+  </loadAfter>
+  <description>Kiiro in 3D for IsoRim Waylith.
+Kiiro colonists are drawn as 3D figures in IsoRim's 3D view.
+Own body and head, with IsoRim's eyes.
+3D hair styles, ahoge and cat ears; the ears take the skin colour and show above hats.
+A 3D tail that follows the body.
+Works with IsoRim's "Keep as paper" setting. Needs IsoRim Waylith with Api 25 or newer.
+
+让 Kiiro 在 IsoRim Waylith 里变成 3D。
+Kiiro 殖民者在 IsoRim 的 3D 视角里显示为 3D 小人。
+专属的身体和头部，使用 IsoRim 的眼睛。
+3D 发型、呆毛和猫耳；猫耳随肤色，戴帽子时露在帽子外面。
+跟随身体的 3D 尾巴。
+支持 IsoRim 的「保持纸片人」设置。需要 Api 25 或更新的 IsoRim Waylith。</description>
+</ModMetaData>

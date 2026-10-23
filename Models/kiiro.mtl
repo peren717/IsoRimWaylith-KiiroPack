@@ -1,0 +1,5 @@
+# IsoRim Waylith - Kiiro Pack materials (our own)
+newmtl stuff
+Kd 1 1 1
+newmtl kiiro_neck
+Kd 0.98 0.86 0.78

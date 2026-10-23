@@ -1,0 +1,5 @@
+# IsoRim Waylith - Kiiro Pack: hair and ears (our own). stuff = takes the colour the pack gives (hair: HAR's hair channel; ears: skin)
+newmtl stuff
+Kd 1 1 1
+newmtl kiiroear_inner
+Kd 0.93 0.66 0.68

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- IsoRim Waylith - Kiiro Pack: Kiiro Race (Ancot.KiiroRace) drawn as a 3D figure in IsoRim's view, with our own models
+       (body, head, tail, hair groups, ahoge, ears). No Kiiro art is copied: the models are bound to Kiiro's addons by their
+       texture paths. The def type is new in IsoRim Api 25, so it is added only on IsoRim Api 25 or newer (IsoRimPackGate). -->
+  <Operation Class="IsoRimPackGate.PatchOperation_IfIsoRimApi">
+    <minVersion>25</minVersion>
+    <apply Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+        <IsoRim.AlienModelDef>
+          <defName>KiiroPack_Kiiro</defName>
+          <alien>Kiiro_Race</alien>
+          <figure>Own</figure>
+          <modPackageId>Peren.IsoRimWaylith.KiiroPack</modPackageId>
+          <face>IsoRim</face>
+          <hair>None</hair>   <!-- Kiiro's hair is its HAR addons (our models below); its hair def draws nothing -->
+          <bodies>
+            <li>
+              <upper>Models/kiiro_upper.obj</upper>
+              <lower>Models/kiiro_lower.obj</lower>
+              <fitAs>female</fitAs>
+            </li>
+          </bodies>
+          <heads>
+            <li>
+              <graphicPath>Kiiro/Head/</graphicPath>
+              <model>Models/kiiro_head.obj</model>
+            </li>
+          </heads>
+          <addons>
+            <!-- Hair: one shared model per group of similar styles (front and back hair in one model), bound to the front hair
+                 addon's texture; the matching back hair (BG) addon hidden. Tinted by HAR's hair colour. -->
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair</graphicPath><model>Models/kiirohair_bob.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair1</graphicPath><model>Models/kiirohair_bob.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG1</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair6</graphicPath><model>Models/kiirohair_bob.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG6</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair7</graphicPath><model>Models/kiirohair_bob.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG7</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair2</graphicPath><model>Models/kiirohair_bob_tail.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG2</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair3</graphicPath><model>Models/kiirohair_bob_braid.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG3</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair11</graphicPath><model>Models/kiirohair_bob_braid.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG11</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair4</graphicPath><model>Models/kiirohair_shoulder.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG4</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair8</graphicPath><model>Models/kiirohair_shoulder.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG8</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair5</graphicPath><model>Models/kiirohair_long.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG5</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair9</graphicPath><model>Models/kiirohair_long.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG9</graphicPath><hide>true</hide></li>
+            <li><graphicPath>Kiiro/Hair/NewHair/KiiroHair10</graphicPath><model>Models/kiirohair_long.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/NewHairBackGround/KiiroHairBG10</graphicPath><hide>true</hide></li>
+            <!-- Ahoge: two shared shapes (Ahoge without a number has no pixels: nothing to bind) -->
+            <li><graphicPath>Kiiro/Hair/HairAhoge/Ahoge1</graphicPath><model>Models/kiirohair_ahoge_curl.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/HairAhoge/Ahoge6</graphicPath><model>Models/kiirohair_ahoge_curl.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/HairAhoge/Ahoge2</graphicPath><model>Models/kiirohair_ahoge_sprout.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/HairAhoge/Ahoge3</graphicPath><model>Models/kiirohair_ahoge_sprout.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/HairAhoge/Ahoge4</graphicPath><model>Models/kiirohair_ahoge_sprout.obj</model><anchor>head</anchor></li>
+            <li><graphicPath>Kiiro/Hair/HairAhoge/Ahoge5</graphicPath><model>Models/kiirohair_ahoge_sprout.obj</model><anchor>head</anchor></li>
+            <li>
+              <graphicPath>Kiiro/Addon/Tail/</graphicPath>
+              <model>Models/kiiro_tail.obj</model>
+              <anchor>tailRoot</anchor>
+            </li>
+            <!-- Cat ears: our models rooted in the hair (skin colour, pink inside), lifted out of hats as in 2D -->
+            <li><graphicPath>Kiiro/Addon/Ear/RightEar</graphicPath><model>Models/kiiroear_r.obj</model><anchor>head</anchor><colour>Skin</colour><hatLift>1.1</hatLift></li>
+            <li><graphicPath>Kiiro/Addon/Ear/LeftEar</graphicPath><model>Models/kiiroear_l.obj</model><anchor>head</anchor><colour>Skin</colour><hatLift>1.1</hatLift></li>
+          </addons>
+          <anchors>
+            <head>(0, 0.64, 0)</head>
+            <headFit>(0.82, 0.64, 0.86)</headFit>
+            <face>(0, 0.765, 0.183)</face>
+            <faceFit>(0.8, 0.8, 0.8)</faceFit>
+            <neck>(0, 0.64, 0)</neck>
+            <back>(0, 0.56, -0.09)</back>
+            <waist>(0, 0.34, 0)</waist>
+            <handLeft>(-0.17, 0.37, 0)</handLeft>
+            <handRight>(0.17, 0.37, 0)</handRight>
+            <tailRoot>(0, 0.32, -0.09)</tailRoot>
+            <bodyFit>(0.68, 0.87, 0.72)</bodyFit>
+          </anchors>
+        </IsoRim.AlienModelDef>
+      </value>
+    </apply>
+  </Operation>
+</Patch>
