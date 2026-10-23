@@ -12,6 +12,8 @@ Requires IsoRim Waylith with Api 25 or newer and Kiiro Race (with Humanoid Alien
 
 XML and OBJ only, plus the shared `IsoRimPackGate.dll` from IsoRim (`Tools/PackGate`), which adds the patch only on IsoRim Api 25 or newer. The models are bound to Kiiro's addons by their texture paths.
 
+**For modders:** this pack is a complete, working example of an IsoRim alien pack (`IsoRim.AlienModelDef`): no code, only the patch in `Patches/KiiroPack.xml` and the models in `Models/`. See IsoRim's Docs/ModelPacks.md ("Alien packs") and Docs/Api.md part 16.
+
 Kiiro Race is made by Ancot. This pack contains no files of the original mod.
 
 MIT License.
@@ -31,6 +33,8 @@ MIT License.
 需要 Api 25 或更新的 IsoRim Waylith，以及 Kiiro Race（含 Humanoid Alien Races 和 Ancot Library），排在它们之后加载。IsoRim 版本较旧时本包不起作用。
 
 只有 XML 和 OBJ，外加 IsoRim 共用的 `IsoRimPackGate.dll`（IsoRim 的 `Tools/PackGate`），只在 IsoRim Api 25 或更新时加入补丁。模型按 Kiiro 附加部件的贴图路径绑定。
+
+**给模组作者：**本包是一个完整可用的 IsoRim 异种族包范例（`IsoRim.AlienModelDef`）：没有代码，只有 `Patches/KiiroPack.xml` 里的补丁和 `Models/` 里的模型。参见 IsoRim 的 Docs/ModelPacks.md（"Alien packs"）和 Docs/Api.md 第 16 部分。
 
 Kiiro Race 由 Ancot 制作。本包不含原 mod 的任何文件。
 
